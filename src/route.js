@@ -1,15 +1,22 @@
 import React from 'react';
+import NewDetail from './page/newsDetai/newsDetai'
 import {StackNavigator, TabNavigator} from 'react-navigation';
 
 import Tabs from './tab/home'
+import commenTab from "./component/common";
 
 export default StackNavigator({
     Main: {
       screen: Tabs
     },
-    // DetailsPage: { // 详情页
-    //   screen: DetailsPage
-    // },
+    Detail: { // 详情页
+      screen :commenTab(NewDetail,{
+  headerTitle: '系统消息',
+  tabBarLabel: '消息',
+}),
+
+
+    },
   },
   {
     headerMode: 'screen',  // 标题导航

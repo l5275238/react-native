@@ -7,7 +7,7 @@ import {setSpText,scaleSize} from './util/pxFit'
   global.scaleSize=scaleSize;
   //全局样式
   global.Color={
-    color:"#333",
+    color:"#F2F2F2",
   }
   global.FontSize={
     smallSize:setSpText(20)
